@@ -73,6 +73,7 @@
             image.classList.remove('show');
             quote.classList.remove('show');
             setTimeout(show, 500);
+    
         }
 
         function show() {
@@ -83,14 +84,15 @@
                 quote.style.fontSize = '';
                 quote.style.justifyContent = '';
             }
-
+            // добавляет фото
             image.src = 'images/' + randomImg;
             quote.textContent = randomQuote
             
             image.classList.add('show');
             quote.classList.add('show');
         }
-
+        var j = 1000
+        
     }
 </script>
 </body>
